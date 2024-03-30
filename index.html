@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-color: white">
+    <div class="navbar" id="myNavbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img
+          id="img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScz8GvbXFR548bsC47Mcx1CQB_Ii3kRCt5-Q_8_IaX8Q&s"
+          alt="Logo" />
+      </div>
+      <!-- Links -->
+      <div class="links">
+        <!-- <a href="#home">Services</a> -->
+
+        <div class="dropdown" id="servicesDropdown">
+          <button class="dropbtn">
+            Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <!-- <a href="#">Banking</a> -->
+          </div>
+        </div>
+
+        <div class="dropdown" id="servicesDropdown">
+          <button class="dropbtn">
+            Environment
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" id="aws">AWS</a>
+            <a href="#" id="azure">Azure</a>
+            <a href="#" id="gcp">GCP</a>
+          </div>
+        </div>
+        <!-- <a href="#news">Environment</a> -->
+        <div class="dropdown" id="servicesDropdown">
+          <button class="dropbtn">
+            contact us
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content"></div>
+        </div>
+      </div>
+    </div>
+    <div id="deploymentButtons" class="hidden">
+      <button id="startDeployment" style="display: none">
+        Start Deployment
+      </button>
+      <button id="endDeployment" style="display: none">End Deployment</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
